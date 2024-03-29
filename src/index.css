@@ -1,0 +1,67 @@
+/* Add styling for the game */
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.player {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.player.active {
+  background-color: yellow;
+}
+
+
+
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSREA8HwgxK-xiDmfpWxt9NecPvwvd2x1vH6A&s');
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.player1 {
+  background-color: red; /* Example color for player 1 */
+}
+
+.player2 {
+  background-color: blue; /* Example color for player 2 */
+}
+
+.snake-cell {
+  position: relative;
+}
+
+.snake-cell img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
